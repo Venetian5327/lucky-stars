@@ -11,6 +11,7 @@
     <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent" />
     <meta name="apple-mobile-web-app-title" content="Brave Planet" />
     
+    <!-- 引入 Tailwind 和 字体 -->
     <script src="https://cdn.tailwindcss.com"></script>
     <link href="https://fonts.googleapis.com/css2?family=Fredoka:wght@300;400;500;600;700&display=swap" rel="stylesheet">
     
@@ -48,7 +49,7 @@
 </head>
   <body>
     <div id="root"></div>
-    <!-- 使用 ./ 相对路径，确保 Vite 构建后能正确找到入口文件 -->
-    <script type="module" src="./index.tsx"></script>
+    <!-- Vite 构建时会自动识别并处理这个路径 -->
+    <script type="module" src="/index.tsx"></script>
   </body>
 </html>

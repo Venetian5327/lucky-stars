@@ -1,19 +1,21 @@
 import { defineConfig } from 'vite';
 import react from '@vitejs/plugin-react';
 
+// https://vitejs.dev/config/
 export default defineConfig({
   plugins: [react()],
-  // 必须对应你的仓库名
+  // 基础路径必须匹配你的 GitHub 仓库名
   base: '/lucky-stars/',
   build: {
     outDir: 'dist',
     emptyOutDir: true,
     assetsDir: 'assets',
-    sourcemap: false, // 减少构建时间，避免内存溢出
+    // 增加兼容性处理
+    target: 'esnext',
     rollupOptions: {
       output: {
         manualChunks: {
-          'react-vendor': ['react', 'react-dom', 'react-router-dom'],
+          'vendor': ['react', 'react-dom', 'react-router-dom', 'framer-motion'],
         },
       },
     },

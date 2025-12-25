@@ -1,0 +1,22 @@
+
+{
+  "short_name": "Brave Planet",
+  "name": "Brave Planet: Kids Task Mastery",
+  "icons": [
+    {
+      "src": "https://api.dicebear.com/7.x/icons/svg?seed=rocket&backgroundColor=4f46e5",
+      "sizes": "192x192",
+      "type": "image/png"
+    },
+    {
+      "src": "https://api.dicebear.com/7.x/icons/svg?seed=rocket&backgroundColor=4f46e5",
+      "sizes": "512x512",
+      "type": "image/png"
+    }
+  ],
+  "start_url": "./index.html",
+  "background_color": "#0B0B2A",
+  "display": "standalone",
+  "theme_color": "#0B0B2A",
+  "description": "A gamified task tracker for brave explorers."
+}
